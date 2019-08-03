@@ -7,8 +7,6 @@ use Smaex\SitemapExcludes\Api\ProductAttributeInterface;
 
 /**
  * Excludes selected products from XML sitemaps.
- *
- * @codeCoverageIgnore
  */
 class ExcludeFromSitemap
 {
