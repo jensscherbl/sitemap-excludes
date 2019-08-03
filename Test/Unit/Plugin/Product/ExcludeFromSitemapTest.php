@@ -76,13 +76,11 @@ class ExcludeFromSitemapTest extends TestCase
                 $excludedProductIds
             );
 
-        $this->assertSame(
-            $expectedResult,
-            $this->instance->afterGetCollection(
-                $this->mockProduct,
-                $originalResult,
-                self::STORE_ID
-            )
+        $actualResult = $this->instance->afterGetCollection(
+            $this->mockProduct,
+            $originalResult,
+            self::STORE_ID
         );
+        $this->assertSame($expectedResult, $actualResult);
     }
 }
