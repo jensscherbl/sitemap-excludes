@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <!-- Types -->
+
+    <type name="Magento\Sitemap\Model\ResourceModel\Catalog\Product">
+        <plugin name="smaex_exclude_from_sitemap" type="Smaex\SitemapExcludes\Plugin\Product\ExcludeFromSitemap"/>
+    </type>
+
+</config>
